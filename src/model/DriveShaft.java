@@ -4,7 +4,7 @@ public class DriveShaft {
     private String markDriveShaft;
     private String valveName;
 
-    DriveShaft(String markDriveShaft, String valveName) {
+    public DriveShaft(String markDriveShaft, String valveName) {
         this.markDriveShaft = markDriveShaft;
         this.valveName = valveName;
     }
@@ -13,15 +13,13 @@ public class DriveShaft {
         return markDriveShaft;
     }
 
-    public void setMarkDriveShaft(String markDriveShaft) {
-        this.markDriveShaft = markDriveShaft;
-    }
-
     public String getValveName() {
         return valveName;
     }
 
-    public void setValveName(String valveName) {
-        this.valveName = valveName;
+    @Override
+    public String toString() {
+        return " - Marca motor: " + markDriveShaft + '\n' +
+                " - Nombre válvula: " + valveName + '\n';
     }
 }
