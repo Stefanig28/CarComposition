@@ -42,9 +42,12 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "driveShaft=" + driveShaft +
-                ", tires=" + Arrays.toString(tires) +
-                '}';
+        String aux = "";
+        for (int i = 0; i < tires.length; i++) {
+            aux+= tires[i].toString();
+        }
+        return "***   Información del carro   ***" + "\n"+
+                "Información del motor: " + "\n"+ driveShaft.toString() +
+                "Información de las llantas: " + "\n"+ aux;
     }
 }

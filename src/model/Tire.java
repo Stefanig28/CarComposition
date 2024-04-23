@@ -4,7 +4,7 @@ public class Tire {
     private String typeRim;
     private String markTire;
 
-    Tire(String typeRim, String markTire){
+    public Tire(String typeRim, String markTire){
         this.typeRim = typeRim;
         this.markTire = markTire;
     }
@@ -13,23 +13,13 @@ public class Tire {
         return typeRim;
     }
 
-    public void setTypeRim(String typeRim) {
-        this.typeRim = typeRim;
-    }
-
     public String getMarkTire() {
         return markTire;
     }
 
-    public void setMarkTire(String markTire) {
-        this.markTire = markTire;
-    }
-
     @Override
     public String toString() {
-        return "Tire{" +
-                "typeRim='" + typeRim + '\'' +
-                ", markTire='" + markTire + '\'' +
-                '}';
+        return " - Tipo de rin: " + typeRim  +
+                " - Marca rin: " + markTire + '\n';
     }
 }
